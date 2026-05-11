@@ -56,7 +56,7 @@ export default function DisplayExpenses({ expenses, onDeleteExpense }) {
                             <td class="border border-gray-300 p-2">{expense.expenseDate}</td>
                             <td class="border border-gray-300 p-2">
                             <button 
-                                onClick={() => onDeleteExpense(index)}
+                                onClick={() => onDeleteExpense(expense.id)}
                                 class="bg-red-500 text-white text-sm px-2 py-1 rounded hover:bg-red-600">
                                 Delete
                             </button>

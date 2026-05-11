@@ -18,12 +18,13 @@ export default function ExpenseInput({ onAddExpense }) {
       expenseName,
       expenseDescription,
       expenseCategory,
-      expenseAmount,
+      expenseAmount: parseFloat(expenseAmount),
       expenseDate
     }
     
     onAddExpense(expenseData)
-    
+
+    // Clear the form
     setExpenseName('')
     setExpenseDescription('')
     setExpenseCategory('')
